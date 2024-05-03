@@ -6,3 +6,13 @@
     color: white;
 
 }
+
+.room-list li{
+    list-style: none;
+}
+
+.font-p {
+    width: 50%;
+    font-size: 2rem;
+    font-weight: lighter;
+}
