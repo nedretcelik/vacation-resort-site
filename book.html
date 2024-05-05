@@ -48,76 +48,88 @@
     </header>
     <div class="container">
       <main>
-        <div class="container mt-5">
-          <form style="width: 50%">
-            <div class="mb-3">
-              <label for="nameInput" class="form-label">Name</label>
-              <input type="text" class="form-control" id="nameInput" />
+        <div class="row">
+          <div class="col">
+            <div class="container mt-5">
+              <form style="width: 50%">
+                <div class="mb-3">
+                  <label for="nameInput" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="nameInput" />
+                </div>
+                <div class="mb-3">
+                  <label for="emailInput" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" />
+                </div>
+                <div class="mb-3">
+                  <label for="checkInDate" class="form-label"> Check In</label>
+                  <input type="date" class="form-control" id="checkInDate" />
+                </div>
+                <div class="mb-3">
+                  <label for="checkOutDate" class="form-label"> Check Out</label>
+                  <input type="date" class="form-control" id="checkOutDate" />
+                </div>
+                <div class="mb-3">
+                  <label for="numberOfNights" class="form-label"> Number of Nights</label>
+                  <input type="number" class="form-control" id="numberOfNights" min="1" max="28" />
+                </div>
+                <div class="mb-3">
+                  <h5>Room Type</h5>
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="queenRadio" />
+                    <label class="form-check-label" for="queenRadio"> Queen</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="kingRadio" />
+                    <label class="form-check-label" for="kingRadio"> King</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="suiteRadio" />
+                    <label class="form-check-label" for="suiteRadio"> 2-Bedroom Suite</label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="numberOfAdults" class="form-label"> Number of Adulst</label>
+                  <input type="number" class="form-control" id="numberOfAdults" min="1" max="4" />
+                </div>
+                <div class="mb-3">
+                  <label for="numberOfChildren" class="form-label"> Number of Children</label>
+                  <input type="number" class="form-control" id="numberOfChildren" min="0" max="4" />
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="discountRadioDefault" id="noneDiscountRadio" />
+                    <label class="form-check-label" for="noneDiscountRadio">None</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="discountRadioDefault" id="seniorDiscountRadio" />
+                    <label class="form-check-label" for="seniorDiscountRadio"> AAA/Senior (10%)</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="discountRadioDefault" id="militaryDiscountRadio" />
+                    <label class="form-check-label" for="militaryDiscountRadio"> Military (20%)</label>
+                  </div>
+                </div>
+    
+                <button id="bookSubmitBtn" type="button" class="btn btn-primary">Submit</button>
+              </form>
             </div>
-            <div class="mb-3">
-              <label for="emailInput" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" />
-            </div>
-            <div class="mb-3">
-              <label for="checkInDate" class="form-label"> Check In</label>
-              <input type="date" class="form-control" id="checkInDate" />
-            </div>
-            <div class="mb-3">
-              <label for="checkOutDate" class="form-label"> Check Out</label>
-              <input type="date" class="form-control" id="checkOutDate" />
-            </div>
-            <div class="mb-3">
-              <label for="numberOfNights" class="form-label"> Number of Nights</label>
-              <input type="number" class="form-control" id="numberOfNights" min="1" max="28" />
-            </div>
-            <div class="mb-3">
-              <h5>Room Type</h5>
-            </div>
-            <div class="mb-3">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="queenRadio" />
-                <label class="form-check-label" for="queenRadio"> Queen</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="kingRadio" />
-                <label class="form-check-label" for="kingRadio"> King</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="suiteRadio" />
-                <label class="form-check-label" for="suiteRadio"> 2-Bedroom Suite</label>
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="numberOfAdults" class="form-label"> Number of Adulst</label>
-              <input type="number" class="form-control" id="numberOfAdults" min="1" max="4" />
-            </div>
-            <div class="mb-3">
-              <label for="numberOfChildren" class="form-label"> Number of Children</label>
-              <input type="number" class="form-control" id="numberOfChildren" min="0" max="4" />
-            </div>
-            <div class="mb-3">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="discountRadioDefault" id="noneDiscountRadio" />
-                <label class="form-check-label" for="noneDiscountRadio">None</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="discountRadioDefault" id="seniorDiscountRadio" />
-                <label class="form-check-label" for="seniorDiscountRadio"> AAA/Senior (10%)</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="discountRadioDefault" id="militaryDiscountRadio" />
-                <label class="form-check-label" for="militaryDiscountRadio"> Military (20%)</label>
-              </div>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+          </div>
+          <div class="col">
+            <h3>Result of Date and Number of Days</h3>
+            <p id="checkInDateResult">xxxxx</p>
+            <p id="checkOutDateResult">yyyyy</p>
+            <p id="numberOfNigtsResult">zzzz</p>
+          </div>
         </div>
+        
       </main>
     </div>
     <footer>
       <!-- place footer here -->
     </footer>
+    <script src="./scripts/book.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
