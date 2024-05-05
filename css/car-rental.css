@@ -1,0 +1,14 @@
+.no-bullets li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .totals {
+    width: 17rem;
+  }
+
+
+  #displayTable {
+    display: none;
+  }

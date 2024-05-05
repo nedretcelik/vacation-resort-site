@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Centered viewport -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css" />
+    
+    <link rel="stylesheet" href="css/car-rental.css" />
+  </head>
+  <body>
+    <main>
+        <h6>
+            <a href="./index.html">Previous page</a>
+        </h6>
+      <article>
+        <h3>Car Rental</h3>
+        <form>
+          <label for="pickupDateInput">Pickup date:</label>
+          <input type="date" id="pickupDateInput" />
+          <label for="numberOfDaysInput">Number of days</label>
+          <input type="number" id="numberOfDaysInput" />
+          <fieldset>
+            <legend>Options</legend>
+            <label for="tollTagCheckbox">
+                <input type="checkbox" name="" id="tollTagCheckbox"  />
+                Electronic Toll tag ($3.95/day)
+            </label> 
+            <label for="gpsCheckbox">
+                <input type="checkbox" name="" id="gpsCheckbox" />
+                GPS ($2.95/day)
+            </label>
+            <label for="roadsideCheckbox">
+                <input type="checkbox" name="" id="roadsideCheckbox" />
+                Roadside Assistance ($2.95/day)
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Under 25</legend>
+            <input type="radio" name="under25" id="under25No">
+            <label for="">No</label>
+            <input type="radio" name="under25" id="under25Yes">
+            <label for="">Yes</label>
+          </fieldset>
+          <button type="button" id="estimateButton">Estimate total Cost</button>
+
+
+          <table id="displayTable" class="totals">
+            <tbody>
+                <tr>
+                    <td>Car rental:</td>
+                    <td id="carTotalTD">xxx.xx</td>
+                </tr>
+                <tr>
+                    <td>Options:</td>
+                    <td id="optionsTotalTD">xxx.xx</td>
+                </tr>
+                <tr>
+                    <td>Under 25 surcharge:</td>
+                    <td id="under25totalTD">xxx.xx</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total Due:</td>
+                    <td id="totalDueTD">xxx.xx</td>
+                </tr>
+            </tfoot>
+          </table>
+        </form>
+      </article>
+    </main>
+    <script src="./scripts/car-rental.js"></script>
+    </script>
+
+    <script src="https://dohliam.github.io/dropin-minimal-css/switcher.js" type="text/javascript"></script>
+  </body>
+</html>
