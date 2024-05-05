@@ -16,3 +16,8 @@
     font-size: 2rem;
     font-weight: lighter;
 }
+
+#messageParagraph {
+    color: green;
+    font-weight: 400;
+}

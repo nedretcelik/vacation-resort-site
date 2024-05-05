@@ -10,6 +10,9 @@ window.onload = function () {
     const kingRadio = document.getElementById("kingRadio");
     const suiteRadio = document.getElementById("suiteRadio");
 
+    const numberOfAdults = document.getElementById("numberOfAdults");
+    const numberOfChildren = document.getElementById("numberOfChildren");
+
     queenRadio.onclick = getRoomRate;
     kingRadio.onclick = getRoomRate;
     suiteRadio.onclick = getRoomRate;
@@ -17,6 +20,9 @@ window.onload = function () {
 
     checkInDate.onchange = numberOfNightsCalculation;
     checkOutDate.onchange = numberOfNightsCalculation;
+
+    numberOfAdults.onchange = getRoomRate;
+    numberOfChildren.onchange = getRoomRate;
 
 
     bookSubmitBtn.onclick = costOfStayCalculation;
@@ -48,6 +54,10 @@ function getRoomRate() {
     const kingRadio = document.getElementById("kingRadio").checked;
     const suiteRadio = document.getElementById("suiteRadio").checked;
     const priceOfOneNight = document.getElementById("priceOfOneNight");
+    const numberOfAdults = Number(document.getElementById("numberOfAdults").value);
+    const numberOfChildren = Number(document.getElementById("numberOfChildren").value);
+    const messageParagraph = document.getElementById("messageParagraph");
+
 
     const checkInDate = new Date(document.getElementById("checkInDate").value);
     const checkOutDate = new Date(document.getElementById("checkOutDate").value);
@@ -80,7 +90,23 @@ function getRoomRate() {
     /* let totalPrice = numberOfNights * oneDayPrice;
     numberOfNigtsResult.innerText = totalPrice; */
 
-    
+    if(
+        (queenRadio && ((numberOfAdults+numberOfChildren) > 5)) ||
+        (kingRadio && ((numberOfAdults+numberOfChildren) > 2))  ||
+        (suiteRadio && ((numberOfAdults+numberOfChildren) > 6))
+      ) {
+        messageParagraph.innerText = "!!! The room you selected will not hold your party";
+        messageParagraph.style.color = "red"
+     
+      } else {
+        messageParagraph.innerText = "Avaliable";
+        messageParagraph.style.color = "green"
+      }
+
+
+
+
+
      
 }
 
