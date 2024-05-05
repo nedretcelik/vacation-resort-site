@@ -32,3 +32,23 @@ h3, h5{
     border: 2px solid lightgray;
     padding: 1rem;
 }
+
+.bold-span {
+    font-weight: 600;
+}
+
+.p-dine {
+    background-color: #f5f5f5;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.p-dine h5 {
+    font-weight: 100;
+    
+}
+
+.p-dine p {
+    font-size: 5rem;
+    font-weight: 100;
+}
