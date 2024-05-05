@@ -135,6 +135,7 @@ function costOfStayCalculation() {
         discountTypeInput.innerText = "Military (20%)"
         discountAmount = totalPriceOriginal * 0.2;
     } else {
+        discountTypeInput.innerText = "None"
         discountAmount = 0;
     }
 
