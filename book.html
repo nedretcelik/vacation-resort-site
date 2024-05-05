@@ -50,7 +50,6 @@
       <main>
         <div class="row">
           <div class="col">
-            <div class="container mt-5">
               <form style="width: 50%">
                 <div class="mb-3">
                   <label for="nameInput" class="form-label">Name</label>
@@ -90,7 +89,12 @@
                   </div>
                 </div>
                 <div class="mb-3">
-                  <label for="numberOfAdults" class="form-label"> Number of Adulst</label>
+                  <h6>Night Price</h6>
+                  <p>$<span id="priceOfOneNight"></span></p>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="numberOfAdults" class="form-label"> Number of Adults</label>
                   <input type="number" class="form-control" id="numberOfAdults" min="1" max="4" />
                 </div>
                 <div class="mb-3">
@@ -114,13 +118,20 @@
     
                 <button id="bookSubmitBtn" type="button" class="btn btn-primary">Submit</button>
               </form>
-            </div>
+            
           </div>
           <div class="col">
-            <h3>Result of Date and Number of Days</h3>
-            <p id="checkInDateResult">xxxxx</p>
-            <p id="checkOutDateResult">yyyyy</p>
-            <p id="numberOfNigtsResult">zzzz</p>
+            <h3>Estimate Stay Cost</h3>
+            <h6>Original Room Cost</h6>
+            <p id="originalRoomCostInput">xxxxx</p>
+            <h6>Discount Type</h6>
+            <p id="discountTypeInput">yyyyy</p>
+            <h6>Discounted Room Cost</h6>
+            <p id="discountedRoomCostInput">zzzz</p>
+            <h6>Tax</h6>
+            <p id="taxAmountInput">zzzz</p>
+            <h6>Total Cost of the stay</h6>
+            <p id="totalCostOfStay">zzzz</p>
           </div>
         </div>
         
