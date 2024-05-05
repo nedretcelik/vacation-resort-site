@@ -4,6 +4,8 @@
 
 .text-color-w {
     color: white;
+    padding-top: 4rem;
+    padding-left: 4rem;
 
 }
 
@@ -15,4 +17,18 @@
     width: 50%;
     font-size: 2rem;
     font-weight: lighter;
+}
+
+#messageParagraph {
+    color: green;
+    font-weight: 400;
+}
+
+h3, h5{
+    font-weight: 400;
+}
+
+.border-total-cost {
+    border: 2px solid lightgray;
+    padding: 1rem;
 }
