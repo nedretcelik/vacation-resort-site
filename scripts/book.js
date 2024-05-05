@@ -146,9 +146,9 @@ function costOfStayCalculation() {
 
     let taxAmount = discountedRoomCost* 0.12;
 
-    taxAmountInput.innerText = taxAmount.toFixed(2);
+    taxAmountInput.innerText = "$" + taxAmount.toFixed(2);
 
-    totalCostOfStay.innerText = discountedRoomCost + taxAmount;
+    totalCostOfStay.innerText = "$" + discountedRoomCost + taxAmount;
 
 
 

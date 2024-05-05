@@ -21,3 +21,12 @@
     color: green;
     font-weight: 400;
 }
+
+h3, h5{
+    font-weight: 400;
+}
+
+.border-total-cost {
+    border: 2px solid lightgray;
+    padding: 1rem;
+}
