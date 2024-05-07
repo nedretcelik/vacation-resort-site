@@ -1,6 +1,6 @@
 # Workshop - 2 Vacation Resort
 
-#### Inspired by mandarinoriental.com
+#### Design inspired by mandarinoriental.com
 
 
 ### Home Page
